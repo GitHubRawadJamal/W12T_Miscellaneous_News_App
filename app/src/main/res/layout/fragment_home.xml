@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/margin_normal"
+    android:paddingVertical="@dimen/margin_very_small"
+    android:background="@color/light_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/all_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_all_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_all_news"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image1"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_all_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_all_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_all_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image1"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/national_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/all_news_container">
+
+                <TextView
+                    android:id="@+id/tv_national_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_national_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image2"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_national_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_national_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_national_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image2"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/business_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/national_news_container">
+
+                <TextView
+                    android:id="@+id/tv_business_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_business_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image3"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_business_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_business_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_business_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image3"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sports_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/business_news_container">
+
+                <TextView
+                    android:id="@+id/tv_sports_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_sports_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image4"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_sports_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_sports_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_sports_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image4"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/world_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sports_news_container">
+
+                <TextView
+                    android:id="@+id/tv_world_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_world_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image5"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_world_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_world_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_world_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image5"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/politics_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/world_news_container">
+
+                <TextView
+                    android:id="@+id/tv_politics_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_politics_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image6"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_politics_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_politics_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_politics_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image6"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/technology_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/politics_news_container">
+
+                <TextView
+                    android:id="@+id/tv_technology_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_technology_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image7"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_technology_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_technology_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_technology_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image7"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/startup_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/technology_news_container">
+
+                <TextView
+                    android:id="@+id/tv_startup_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_startup_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image8"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_startup_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_startup_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_startup_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image8"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/entertainment_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/startup_news_container">
+
+                <TextView
+                    android:id="@+id/tv_entertainment_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_entertainment_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image9"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_entertainment_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_entertainment_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_entertainment_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image9"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/miscellaneous_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/entertainment_news_container">
+
+                <TextView
+                    android:id="@+id/tv_miscellaneous_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_miscellaneous_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image10"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_miscellaneous_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_miscellaneous_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_miscellaneous_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image10"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/hatke_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/miscellaneous_news_container">
+
+                <TextView
+                    android:id="@+id/tv_hatke_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_hatke_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image11"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_hatke_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_hatke_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_hatke_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image11"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/science_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hatke_news_container">
+
+                <TextView
+                    android:id="@+id/tv_science_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_science_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image12"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_science_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_science_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_science_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image12"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--//////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/automobile_news_container"
+                style="@style/news_category_container_style"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/science_news_container">
+
+                <TextView
+                    android:id="@+id/tv_automobile_news_category"
+                    style="@style/news_category_name_style"
+                    android:text="@string/category_text_automobile_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/news_general_image13"
+                    style="@style/news_general_image_style"
+                    app:layout_constraintDimensionRatio="2.2:1.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_automobile_news_category" />
+
+                <Button
+                    android:id="@+id/btn_show_automobile_news"
+                    style="@style/show_news_category_button_style"
+                    android:text="@string/btn_text_show_automobile_news"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/news_general_image13"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

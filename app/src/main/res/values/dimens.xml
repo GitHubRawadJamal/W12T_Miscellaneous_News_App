@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ___________________ dimens for margin & padding ___________________ -->
+    <dimen name="margin_very_small">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_very_large">32dp</dimen>
+    <dimen name="margin_largest">64dp</dimen>
+
+    <!-- ___________________ dimens for text size ___________________ -->
+    <dimen name="text_size_very_small">4sp</dimen>
+    <dimen name="text_size_small">8sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_very_large">32sp</dimen>
+
+    <!-- ___________________ dimens for radius ___________________ -->
+    <dimen name="radius_very_small">4dp</dimen>
+    <dimen name="radius_small">8dp</dimen>
+    <dimen name="radius_normal">16dp</dimen>
+    <dimen name="radius_large">24dp</dimen>
+
+
+    <dimen name="start_view_height">120dp</dimen>
+
+</resources>

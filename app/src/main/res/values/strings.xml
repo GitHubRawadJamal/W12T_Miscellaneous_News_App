@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Miscellaneous News</string>
+
+    <string name="text_start_view">Welcome! chose the news you want to see.</string>
+
+    <!-- categories texts -->
+    <string name="category_text_all_news">All News</string>
+    <string name="category_text_national_news">National News</string>
+    <string name="category_text_business_news">Business News</string>
+    <string name="category_text_sports_news">Sports News</string>
+    <string name="category_text_world_news"> World News</string>
+    <string name="category_text_politics_news">Politics News</string>
+    <string name="category_text_technology_news">Technology News</string>
+    <string name="category_text_startup_news">Startup News</string>
+    <string name="category_text_entertainment_news">Entertainment News</string>
+    <string name="category_text_miscellaneous_news">Miscellaneous News</string>
+    <string name="category_text_hatke_news">Hatke News</string>
+    <string name="category_text_science_news">Science News</string>
+    <string name="category_text_automobile_news">Automobile News</string>
+
+
+    <!-- buttons show categories texts -->
+    <string name="btn_text_show_all_news">Show All News</string>
+    <string name="btn_text_show_national_news">Show National News</string>
+    <string name="btn_text_show_business_news">Show Business News</string>
+    <string name="btn_text_show_sports_news">Show Sports News</string>
+    <string name="btn_text_show_world_news">Show World News</string>
+    <string name="btn_text_show_politics_news">Show Politics News</string>
+    <string name="btn_text_show_technology_news">Show Technology News</string>
+    <string name="btn_text_show_startup_news">Show Startup News</string>
+    <string name="btn_text_show_entertainment_news">Show Entertainment News</string>
+    <string name="btn_text_show_miscellaneous_news">Show Miscellaneous News</string>
+    <string name="btn_text_show_hatke_news">Show Hatke News</string>
+    <string name="btn_text_show_science_news">Show Science News</string>
+    <string name="btn_text_show_automobile_news">Show Automobile News</string>
+
+</resources>
